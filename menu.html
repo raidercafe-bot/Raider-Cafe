@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu | Raider Cafe</title>
+<style>
+  /* Basic Reset (Same as the homepage) */
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
+  body { background-color: #ffffff; color: #333333; }
+  
+  /* Header & Nav */
+  header { background-color: #ffffff; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+  .logo { font-size: 24px; font-weight: bold; color: #cc0000; text-transform: uppercase; letter-spacing: 1px; }
+  nav a { margin: 0 15px; text-decoration: none; color: #333333; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+  nav a:hover { color: #cc0000; }
+  .btn-order { background-color: #cc0000; color: white; padding: 10px 20px; border-radius: 50px; text-decoration: none; }
+  .btn-order:hover { background-color: #990000; color: white; }
+
+  /* Menu Page Specific Styles */
+  .menu-header { background-color: #f4f4f4; padding: 40px 50px; border-bottom: 2px solid #cc0000; }
+  .menu-header h1 { font-size: 36px; color: #333333; }
+  
+  .menu-container { padding: 50px; max-width: 1200px; margin: 0 auto; display: flex; gap: 40px; }
+  
+  /* Sidebar for Categories */
+  .menu-sidebar { width: 250px; flex-shrink: 0; }
+  .menu-sidebar h3 { font-size: 18px; margin-bottom: 20px; color: #cc0000; text-transform: uppercase; }
+  .menu-sidebar ul { list-style: none; }
+  .menu-sidebar li { margin-bottom: 15px; }
+  .menu-sidebar a { text-decoration: none; color: #666666; font-weight: bold; font-size: 16px; }
+  .menu-sidebar a:hover { color: #cc0000; }
+
+  /* Menu Items Area */
+  .menu-content { flex-grow: 1; }
+  .category-section { margin-bottom: 50px; }
+  .category-section h2 { font-size: 28px; border-bottom: 1px solid #e0e0e0; padding-bottom: 10px; margin-bottom: 20px; color: #333333; }
+  
+  .item-grid { display: flex; flex-wrap: wrap; gap: 20px; }
+  .menu-item { display: flex; align-items: center; width: calc(50% - 10px); margin-bottom: 20px; }
+  /* Circular images just like Starbucks */
+  .menu-item img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px; background-color: #e0e0e0; }
+  .menu-item-info h4 { font-size: 18px; color: #333333; margin-bottom: 5px; }
+  .menu-item-info p { font-size: 14px; color: #666666; }
+  
+  /* Footer */
+  footer { background-color: #333333; color: white; text-align: center; padding: 30px 20px; margin-top: 50px; }
+  footer p { margin-bottom: 10px; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Raider Cafe</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html" style="color: #cc0000;">Menu</a>
+    <a href="#">Rewards</a>
+    <a href="#">About Us</a>
+    <a href="#" class="btn-order">Order Now</a>
+  </nav>
+</header>
+
+<div class="menu-header">
+  <h1>Menu</h1>
+</div>
+
+<div class="menu-container">
+  <aside class="menu-sidebar">
+    <h3>Categories</h3>
+    <ul>
+      <li><a href="#drinks">Drinks</a></li>
+      <li><a href="#bakery">Bakery</a></li>
+      <li><a href="#snacks">Snacks</a></li>
+    </ul>
+  </aside>
+
+  <main class="menu-content">
+    
+    <section id="drinks" class="category-section">
+      <h2>Drinks</h2>
+      <div class="item-grid">
+        <div class="menu-item">
+          <img src="https://via.placeholder.com/80/cccccc/666666?text=Cup" alt="Iced Coffee">
+          <div class="menu-item-info">
+            <h4>Iced Raider Mocha</h4>
+            <p>$4.50 | 250 Cal</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://via.placeholder.com/80/cccccc/666666?text=Cup" alt="Hot Coffee">
+          <div class="menu-item-info">
+            <h4>Kauai High Brew</h4>
+            <p>$3.00 | 5 Cal</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://via.placeholder.com/80/cccccc/666666?text=Cup" alt="Smoothie">
+          <div class="menu-item-info">
+            <h4>Tropical Red Smoothie</h4>
+            <p>$5.00 | 210 Cal</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bakery" class="category-section">
+      <h2>Bakery</h2>
+      <div class="item-grid">
+        <div class="menu-item">
+          <img src="https://via.placeholder.com/80/cccccc/666666?text=Bread" alt="Sweet Bread">
+          <div class="menu-item-info">
+            <h4>Kauai Sweet Bread</h4>
+            <p>$3.50 | 320 Cal</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://via.placeholder.com/80/cccccc/666666?text=Muffin" alt="Muffin">
+          <div class="menu-item-info">
+            <h4>Red Velvet Muffin</h4>
+            <p>$3.00 | 380 Cal</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <p><strong>Raider Cafe</strong> | Kauai High School</p>
+  <p>3577 Lala Rd, Lihue, HI 96766</p>
+  <p>&copy; 2026 Raider Cafe. Go Red Raiders!</p>
+</footer>
+
+</body>
+</html>
