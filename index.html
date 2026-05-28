@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raider Cafe | Kauai High School</title>
+<style>
+  /* Basic Reset */
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
+  body { background-color: #ffffff; color: #333333; }
+  
+  /* Header & Nav */
+  header { background-color: #ffffff; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+  .logo { font-size: 24px; font-weight: bold; color: #cc0000; text-transform: uppercase; letter-spacing: 1px; }
+  nav a { margin: 0 15px; text-decoration: none; color: #333333; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+  nav a:hover { color: #cc0000; }
+  .btn-order { background-color: #cc0000; color: white; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; }
+  .btn-order:hover { background-color: #990000; }
+
+  /* Hero Section */
+  .hero { background-color: #cc0000; color: white; padding: 80px 50px; text-align: center; }
+  .hero h1 { font-size: 48px; margin-bottom: 20px; }
+  .hero p { font-size: 20px; margin-bottom: 30px; }
+  .hero .btn-light { background-color: white; color: #cc0000; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px;}
+  .hero .btn-light:hover { background-color: #f4f4f4; }
+
+  /* Featured Menu */
+  .menu-section { padding: 50px; text-align: center; }
+  .menu-section h2 { font-size: 32px; color: #cc0000; margin-bottom: 40px; }
+  .grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+  .card { background: #f9f9f9; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); transition: 0.3s; }
+  .card:hover { transform: translateY(-5px); }
+  .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; background-color: #e0e0e0; }
+  .card h3 { margin-bottom: 10px; color: #333333; }
+  .card p { color: #666666; font-size: 14px; margin-bottom: 15px; }
+
+  /* Footer */
+  footer { background-color: #333333; color: white; text-align: center; padding: 30px 20px; margin-top: 50px; }
+  footer p { margin-bottom: 10px; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Raider Cafe</div>
+  <nav>
+    <a href="#">Menu</a>
+    <a href="#">Rewards</a>
+    <a href="#">About Us</a>
+    <a href="#" class="btn-order">Order Now</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Fuel Your School Day.</h1>
+  <p>Handcrafted drinks and fresh pastries, right here at Kauai High School.</p>
+  <a href="#" class="btn-light">View Menu</a>
+</section>
+
+<section class="menu-section">
+  <h2>Red Raider Favorites</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200/cccccc/666666?text=Iced+Coffee" alt="Iced Coffee">
+      <h3>Iced Raider Mocha</h3>
+      <p>Rich espresso, milk, and chocolate over ice. The perfect morning kickstart.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200/cccccc/666666?text=Pastry" alt="Pastry">
+      <h3>Kauai Sweet Bread</h3>
+      <p>Locally sourced, baked fresh daily. Great with a hot coffee.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200/cccccc/666666?text=Smoothie" alt="Smoothie">
+      <h3>Tropical Red Smoothie</h3>
+      <p>Strawberry, guava, and banana blended to perfection.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Raider Cafe</strong> | Kauai High School</p>
+  <p>3577 Lala Rd, Lihue, HI 96766</p>
+  <p>&copy; 2026 Raider Cafe. Go Red Raiders!</p>
+</footer>
+
+</body>
+</html>
